@@ -24,7 +24,7 @@ function generateButtons(n) {
     buttonContainer.innerHTML = "";
     const winnerIndex = Math.floor(Math.random() * n);
 
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < n; ++i) {
         const button = createButton(i, winnerIndex);
         buttonContainer.appendChild(button);
     }
